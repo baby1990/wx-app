@@ -1,0 +1,97 @@
+.c-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 71px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  .modal-layout {
+    width: 340px;
+    max-height: 400px;
+    background: #fff;
+
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    line-height: 48px;
+    font-size: 16px;
+  }
+
+  .title + .content {
+    padding-top: 5px;
+  }
+
+  .content {
+    padding: 15px 15px 10px;
+    line-height: 22px;
+
+    font-size: 12px;
+
+    flex-grow: 1;
+
+    overflow: auto;
+
+    color: #666;
+
+    text-align-last: center;
+  }
+
+  .modal-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      border-top: 1px solid #ddd;
+
+      transform: scaleY(0.5);
+    }
+
+    .btn {
+      position: relative;
+      flex-grow: 1;
+      line-height: 48px;
+
+      color: #4688f2;
+
+      & + .btn {
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          border-left: 1px solid #ddd;
+
+          transform: scaleX(0.5);
+        }
+      }
+    }
+  }
+
+  //.btn-ok {
+  //
+  //}
+  //
+  //.btn-cancel {
+  //
+  //}
+}

@@ -1,0 +1,329 @@
+
+page {
+  background-color: #f6f6f6;
+  font-size: 14px;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 相对定位 */
+.relative {
+  position: relative;
+}
+
+/* 固定定位 */
+.fixed {
+  position: fixed;
+}
+
+/* 绝对定位 */
+.absolute {
+  position: absolute;
+}
+
+/* 绝对定位占满空间 */
+.absolute-fill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* 转换为块级元素 */
+.db {
+  display: block;
+}
+
+/* 转换为内联块级元素 */
+.dib {
+  display: inline-block;
+}
+
+/* 隐藏 */
+.hide {
+  display: none !important;
+}
+
+/* 转换为flex伸缩盒 */
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* 多行flex */
+.flex-wrap {
+  flex-flow: wrap;
+}
+
+/* 横向flex */
+.flex-row {
+  flex-direction: row;
+}
+
+/* 纵向flex */
+.flex-column {
+  flex-direction: column;
+}
+
+/* flex拉伸 */
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+/* flex压缩 */
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+/* flex垂直居中对齐 */
+.items-center {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+/* flex居中对齐 */
+.justify-center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+/* flex分散对齐 */
+.justify-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+/* flex分散对齐 */
+.justify-around {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+/* flex右侧对齐 */
+.justify-end {
+  justify-content: flex-end;
+}
+
+// 字体大小
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+// 鼠标手状态
+.pointer {
+  cursor: pointer;
+}
+
+// 白色
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.w-0 {
+  width: 0;
+}
+
+.h-0 {
+  height: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+
+.m-h-100 {
+  min-height: 100%;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.no-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-999 {
+  z-index: 999;
+}
+
+.z-9999 {
+  z-index: 9999;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-orange {
+  background-color: #ff8a30;
+}
+.c-orange {
+  color: #ff8a30;
+}
+.lh-1 {
+  line-height: 1;
+}
+
+.lh-lg {
+  line-height: 2;
+}
+
+.lh-huge {
+  line-height: 3;
+}
+
+.br-2 {
+  border-radius: 2px;
+}
+.br-3 {
+  border-radius: 3px;
+}
+.br-4 {
+  border-radius: 4px;
+}
+
+.long-text {
+  text-align: justify;
+  white-space: pre-line;
+  word-break: break-all;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+/* 省略号 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+// 修改盒模型计算方式
+.border-box {
+  box-sizing: border-box;
+}
+
+// 无法选取文字
+.select-none {
+  user-select: none;
+}
+
+// 禁用事件
+.p-event-none {
+  pointer-events: none;
+}
+
+// 清除浮动
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+// 两行截断
+.multi-line-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+// 三行截断
+.multi-line-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+.color-333 {
+  color: #333;
+}
+
+.color-666 {
+  color: #666;
+}
+
+.color-999 {
+  color: #999;
+}
+
+.color-bebebe {
+  color: #bebebe;
+}
